@@ -5,7 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Hello! Typescript!`,
+    authors: [
+      { name: "Tori", slug: "tori" },
+      { name: "Neko", slug: "neko" },
+      { name: "Inu", slug: "inu" },
+    ],
+  },
   plugins: [
     `gatsby-plugin-pnpm`,
     {
