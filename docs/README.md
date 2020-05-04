@@ -43,3 +43,8 @@ pnpm run build
 
 set +evx
 ```
+
+# Memo
+
+- Supress warning of tsconfign.json in proglems panel of vscode
+- [Workspece](https://pnpm.js.org/en/workspaces)
