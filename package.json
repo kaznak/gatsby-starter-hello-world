@@ -22,8 +22,10 @@
   "dependencies": {
     "gatsby": "^2.21.9",
     "gatsby-plugin-pnpm": "^1.2.5",
+    "gatsby-plugin-ts": "^2.7.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "prettier": "2.0.5"
