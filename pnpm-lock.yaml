@@ -1,11 +1,14 @@
 dependencies:
-  gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+  gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
   gatsby-plugin-pnpm: 1.2.5_gatsby@2.21.9
   gatsby-plugin-ts: 2.7.1_gatsby@2.21.9+typescript@3.8.3
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   typescript: 3.8.3
 devDependencies:
+  '@types/node': 13.13.4
+  '@types/react': 16.9.34
+  '@types/react-dom': 16.9.7
   prettier: 2.0.5
 lockfileVersion: 5.1
 packages:
@@ -1551,7 +1554,6 @@ packages:
     resolution:
       integrity: sha512-U5icWpv7YnZYGsN4/cmh3WD2onMY0aJIiTE6+51TwJCttdHvtCYmkBNOobHlXwrJRL0nkH9jH4kD+1FAdMN4Tg==
   /@types/node/13.13.4:
-    dev: false
     resolution:
       integrity: sha512-x26ur3dSXgv5AwKS0lNfbjpCakGIduWU1DU91Zz58ONRWrIKGunmZBNv4P7N+e27sJkiGDsw/3fT4AtsqQBrBA==
   /@types/node/8.10.60:
@@ -1563,7 +1565,6 @@ packages:
     resolution:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/prop-types/15.7.3:
-    dev: false
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
   /@types/q/1.5.2:
@@ -1577,11 +1578,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-h0NbqXN/tJuBY/xggZSej1SKQEstbHO7J/omt1tYoFGmj3YXOodZKbbqD4mNDh7zvEGYd7YFrac1LTtAr3xsYQ==
+  /@types/react-dom/16.9.7:
+    dependencies:
+      '@types/react': 16.9.34
+    dev: true
+    resolution:
+      integrity: sha512-GHTYhM8/OwUCf254WO5xqR/aqD3gC9kSTLpopWGpQLpnw23jk44RvMHsyUSEplvRJZdHxhJGMMLF0kCPYHPhQA==
   /@types/react/16.9.34:
     dependencies:
       '@types/prop-types': 15.7.3
       csstype: 2.6.10
-    dev: false
     resolution:
       integrity: sha512-8AJlYMOfPe1KGLKyHpflCg5z46n0b5DbRfqDksxBLBTUpB75ypDBAO9eCUcjNwE6LCUslwTz00yyG/X9gaVtow==
   /@types/rimraf/2.0.4:
@@ -2412,7 +2418,7 @@ packages:
       integrity: sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==
   /babel-plugin-remove-graphql-queries/2.9.0_gatsby@2.21.9+graphql@14.6.0:
     dependencies:
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       graphql: 14.6.0
     dev: false
     engines:
@@ -3866,7 +3872,6 @@ packages:
     resolution:
       integrity: sha512-NL3spysxUkcrOgnpsT4Xdl2aiEiBG6bXswAABQVHcMrfjjBisFOKwLDOmf4wf32aPdcJws1zds2B0Rg+jqMyHQ==
   /csstype/2.6.10:
-    dev: false
     resolution:
       integrity: sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
   /currently-unhandled/0.4.1:
@@ -5477,7 +5482,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
-  /gatsby-cli/2.12.7_b8ee83cb47cd63e35dccdcc72bb74285:
+  /gatsby-cli/2.12.7_1ea0ea7060d258c1693cce64625a5025:
     dependencies:
       '@babel/code-frame': 7.8.3
       '@babel/runtime': 7.9.6
@@ -5524,9 +5529,10 @@ packages:
       node: '>=10.13.0'
     hasBin: true
     optionalDependencies:
-      ink: 2.7.1_react@16.13.1
+      ink: 2.7.1_02d893cb8c41b19aac4a498638d902a7
       ink-spinner: 3.0.1_ink@2.7.1+react@16.13.1
     peerDependencies:
+      '@types/react': '*'
       eslint: '*'
       gatsby: '*'
       webpack: '*'
@@ -5556,7 +5562,7 @@ packages:
       '@babel/runtime': 7.9.6
       '@reach/router': 1.3.3_react-dom@16.13.1+react@16.13.1
       '@types/reach__router': 1.3.5
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       prop-types: 15.7.2
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
@@ -5576,7 +5582,7 @@ packages:
       bluebird: 3.7.2
       chokidar: 3.4.0
       fs-exists-cached: 1.0.0
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       gatsby-core-utils: 1.2.0
       glob: 7.1.6
       lodash: 4.17.15
@@ -5602,7 +5608,7 @@ packages:
       '@graphql-toolkit/json-file-loader': 0.10.6
       '@graphql-toolkit/url-loader': 0.10.6
       fs-extra: 7.0.1
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       lodash.debounce: 4.0.8
       typescript: 3.8.3
     dev: false
@@ -5617,7 +5623,7 @@ packages:
       '@babel/runtime': 7.9.6
       bluebird: 3.7.2
       fs-exists-cached: 1.0.0
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       gatsby-page-utils: 0.2.0_gatsby@2.21.9
       glob: 7.1.6
       lodash: 4.17.15
@@ -5631,7 +5637,7 @@ packages:
       integrity: sha512-5FWntUeutF1YUJUy0EHuZE6xBFOljIXSVFJ9gOoQbLUrFw7ba3OW6a7DBruteRX6oOWaQ3YtjGgGOEbpsP3lTQ==
   /gatsby-plugin-pnpm/1.2.5_gatsby@2.21.9:
     dependencies:
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       lodash.uniq: 4.5.0
     dev: false
     peerDependencies:
@@ -5642,7 +5648,7 @@ packages:
     dependencies:
       fork-ts-checker-webpack-plugin: 4.1.3
       fs-extra: 7.0.1
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       gatsby-plugin-graphql-codegen: 2.7.1_gatsby@2.21.9+typescript@3.8.3
       ts-loader: 6.2.2_typescript@3.8.3
       typescript: 3.8.3
@@ -5660,7 +5666,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.9.6
       '@reach/router': 1.3.3_react-dom@16.13.1+react@16.13.1
-      gatsby: 2.21.9_fb30061a7e86de569f159234ab96fa47
+      gatsby: 2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
       scroll-behavior: 0.9.12
@@ -5773,7 +5779,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-UOuRSbNrRkWIi7vzwI2gxd5b+pY0HXuvrhdzB/B/SCUkDaxfKf0LIsLIjtnSAKUrNNxNKnec0jSGk3PJdUNh4g==
-  /gatsby/2.21.9_fb30061a7e86de569f159234ab96fa47:
+  /gatsby/2.21.9_b6bddad4e5d78e92fcfc0cb5b52a89af:
     dependencies:
       '@babel/code-frame': 7.8.3
       '@babel/core': 7.9.6
@@ -5836,7 +5842,7 @@ packages:
       flat: 4.1.0
       fs-exists-cached: 1.0.0
       fs-extra: 8.1.0
-      gatsby-cli: 2.12.7_b8ee83cb47cd63e35dccdcc72bb74285
+      gatsby-cli: 2.12.7_1ea0ea7060d258c1693cce64625a5025
       gatsby-core-utils: 1.2.0
       gatsby-graphiql-explorer: 0.4.0
       gatsby-link: 2.4.0_618de28e76e4409a3ac6e715bd921262
@@ -5885,7 +5891,7 @@ packages:
       react-dev-utils: 4.2.3
       react-dom: 16.13.1_react@16.13.1
       react-error-overlay: 3.0.0
-      react-hot-loader: 4.12.21_react-dom@16.13.1+react@16.13.1
+      react-hot-loader: 4.12.21_9dba40666b890f9e96216465f7e3d094
       react-refresh: 0.7.2
       redux: 4.0.5
       redux-thunk: 2.3.0
@@ -5918,6 +5924,7 @@ packages:
       node: '>=10.13.0'
     hasBin: true
     peerDependencies:
+      '@types/react': '*'
       gatsby: '*'
       react: ^16.4.2
       react-dom: ^16.4.2
@@ -6850,7 +6857,7 @@ packages:
   /ink-box/1.0.0_ink@2.7.1+react@16.13.1:
     dependencies:
       boxen: 3.2.0
-      ink: 2.7.1_react@16.13.1
+      ink: 2.7.1_02d893cb8c41b19aac4a498638d902a7
       prop-types: 15.7.2
       react: 16.13.1
     dev: false
@@ -6863,7 +6870,7 @@ packages:
       integrity: sha512-wD2ldWX9lcE/6+flKbAJ0TZF7gKbTH8CRdhEor6DD8d+V0hPITrrGeST2reDBpCia8wiqHrdxrqTyafwtmVanA==
   /ink-link/1.1.0_ink@2.7.1+react@16.13.1:
     dependencies:
-      ink: 2.7.1_react@16.13.1
+      ink: 2.7.1_02d893cb8c41b19aac4a498638d902a7
       prop-types: 15.7.2
       react: 16.13.1
       terminal-link: 2.1.1
@@ -6879,7 +6886,7 @@ packages:
     dependencies:
       arr-rotate: 1.0.0
       figures: 2.0.0
-      ink: 2.7.1_react@16.13.1
+      ink: 2.7.1_02d893cb8c41b19aac4a498638d902a7
       lodash.isequal: 4.5.0
       prop-types: 15.7.2
     dev: false
@@ -6892,7 +6899,7 @@ packages:
   /ink-spinner/3.0.1_ink@2.7.1+react@16.13.1:
     dependencies:
       cli-spinners: 1.3.1
-      ink: 2.7.1_react@16.13.1
+      ink: 2.7.1_02d893cb8c41b19aac4a498638d902a7
       prop-types: 15.7.2
       react: 16.13.1
     dev: false
@@ -6903,8 +6910,9 @@ packages:
       react: ^16.8.2
     resolution:
       integrity: sha512-AVR4Z/NXDQ7dT5ltWcCzFS9Dd4T8eaO//E2UO8VYNiJcZpPCSJ11o5A0UVPcMlZxGbGD6ikUFDR3ZgPUQk5haQ==
-  /ink/2.7.1_react@16.13.1:
+  /ink/2.7.1_02d893cb8c41b19aac4a498638d902a7:
     dependencies:
+      '@types/react': 16.9.34
       ansi-escapes: 4.3.1
       arrify: 2.0.1
       auto-bind: 4.0.0
@@ -10181,8 +10189,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
-  /react-hot-loader/4.12.21_react-dom@16.13.1+react@16.13.1:
+  /react-hot-loader/4.12.21_9dba40666b890f9e96216465f7e3d094:
     dependencies:
+      '@types/react': 16.9.34
       fast-levenshtein: 2.0.6
       global: 4.4.0
       hoist-non-react-statics: 3.3.2
@@ -12914,6 +12923,9 @@ packages:
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
+  '@types/node': ^13.13.4
+  '@types/react': ^16.9.34
+  '@types/react-dom': ^16.9.7
   gatsby: ^2.21.9
   gatsby-plugin-pnpm: ^1.2.5
   gatsby-plugin-ts: ^2.7.1
